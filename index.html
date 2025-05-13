@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Правила Chald Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #0a192f;
+            color: #e6f1ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .rule-card {
+            background-color: #112240;
+            border-left: 4px solid #64ffda;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 220px;
+        }
+        .rule-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .punishment-tag {
+            background-color: #1e3a8a;
+            padding: 12px;
+            border-top: 1px solid #64ffda;
+            margin-top: auto;
+        }
+        .appeal-btn {
+            background: linear-gradient(135deg, #64ffda 0%, #1e3a8a 100%);
+            transition: all 0.3s ease;
+        }
+        .appeal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(100, 255, 218, 0.3);
+        }
+        .warning-banner {
+            background-color: #f59e0b;
+            color: #1e293b;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+        .rule-number {
+            background-color: #64ffda;
+            color: #0a192f;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .rule-content {
+            flex-grow: 1;
+            padding-bottom: 16px;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Предупреждение -->
+        <div class="warning-banner rounded-lg p-4 mb-8 flex items-center">
+            <i class="fas fa-exclamation-triangle text-xl mr-3"></i>
+            <div>
+                <h3 class="font-bold">ВНИМАНИЕ!</h3>
+                <p>Все участники команды Chald Studio обязаны соблюдать данные правила. Незнание правил не освобождает от ответственности.</p>
+            </div>
+        </div>
+
+        <!-- Заголовок -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-2 text-cyan-300">ПРАВИЛА CHALD STUDIO</h1>
+            <div class="w-24 h-1 bg-cyan-400 mx-auto my-4"></div>
+            <p class="text-cyan-200">Актуальная версия от 01.07.2023</p>
+        </div>
+
+        <!-- Основные правила -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Правило 1 -->
+            <div class="rule-card rounded-lg">
+                <div class="p-6 rule-content">
+                    <div class="flex items-start">
+                        <div class="rule-number">1.1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Уважительное общение</h3>
+                            <p class="text-gray-300">Все участники команды обязаны поддерживать дружелюбную атмосферу. Запрещены оскорбления, унижения, провокации и любые формы дискриминации.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="punishment-tag">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-ban text-red-400 mr-2"></i>
+                        <span>Наказание: Предупреждение → Варн → Блокировка чата на 3 дня → Исключение</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правило 2 -->
+            <div class="rule-card rounded-lg">
+                <div class="p-6 rule-content">
+                    <div class="flex items-start">
+                        <div class="rule-number">1.2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Конфиденциальность</h3>
+                            <p class="text-gray-300">Запрещено распространять любую внутреннюю информацию команды без разрешения руководства.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="punishment-tag">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-ban text-red-400 mr-2"></i>
+                        <span>Наказание: Варн → Блокировка доступа → Исключение</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правило 3 -->
+            <div class="rule-card rounded-lg">
+                <div class="p-6 rule-content">
+                    <div class="flex items-start">
+                        <div class="rule-number">2.1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Работа с проектами</h3>
+                            <p class="text-gray-300">Запрещено вносить изменения в проекты без согласования с ответственным за проект.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="punishment-tag">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-ban text-red-400 mr-2"></i>
+                        <span>Наказание: Варн → Блокировка доступа на 1 неделю → Исключение</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правило 4 -->
+            <div class="rule-card rounded-lg">
+                <div class="p-6 rule-content">
+                    <div class="flex items-start">
+                        <div class="rule-number">2.2</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Использование читов</h3>
+                            <p class="text-gray-300">Строго запрещено использование любых читов, эксплоитов или нечестных преимуществ в проектах команды.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="punishment-tag">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-ban text-red-400 mr-2"></i>
+                        <span>Наказание: Блокировка на 1 неделю → Исключение</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правило 5 -->
+            <div class="rule-card rounded-lg">
+                <div class="p-6 rule-content">
+                    <div class="flex items-start">
+                        <div class="rule-number">2.3</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Оскорбление администрации</h3>
+                            <p class="text-gray-300">Запрещено оскорблять, угрожать или проявлять неуважение к администрации команды.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="punishment-tag">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-ban text-red-400 mr-2"></i>
+                        <span>Наказание: Варн → Блокировка на 3 дня → Исключение</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Правило 6 -->
+            <div class="rule-card rounded-lg">
+                <div class="p-6 rule-content">
+                    <div class="flex items-start">
+                        <div class="rule-number">3.1</div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Активность</h3>
+                            <p class="text-gray-300">Участники команды должны поддерживать минимальный уровень активности. Длительное отсутствие без предупреждения может привести к исключению.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="punishment-tag">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-ban text-red-400 mr-2"></i>
+                        <span>Наказание: Предупреждение → Исключение</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дополнительная информация -->
+        <div class="mt-12 bg-cyan-900 bg-opacity-30 rounded-lg p-6">
+            <h3 class="text-xl font-semibold mb-4 text-cyan-300 flex items-center">
+                <i class="fas fa-info-circle mr-3"></i> Дополнительная информация
+            </h3>
+            <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                    <i class="fas fa-circle text-xs mt-1 mr-2 text-cyan-400"></i>
+                    <span>1 варн = 1 предупреждение. 3 варна = временная блокировка</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-circle text-xs mt-1 mr-2 text-cyan-400"></i>
+                    <span>Особо грубые нарушения могут караться немедленным исключением</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-circle text-xs mt-1 mr-2 text-cyan-400"></i>
+                    <span>Администрация оставляет за собой право изменять наказания по ситуации</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Кнопка обжалования -->
+        <div class="mt-16 text-center">
+            <a href="https://t.me/chaldsupport_bot" target="_blank" class="appeal-btn inline-flex items-center px-8 py-4 rounded-full text-white font-bold text-lg">
+                <i class="fas fa-gavel mr-3"></i> Обжаловать наказание
+            </a>
+            <p class="text-cyan-200 mt-4">Нажав на кнопку, вы перейдёте в Telegram-бота для подачи апелляции</p>
+        </div>
+
+        <!-- Подвал -->
+        <footer class="mt-16 pt-8 border-t border-cyan-900 text-center text-cyan-400">
+            <p>© 2023 Chald Studio. Все права защищены.</p>
+            <p class="mt-2 text-sm">Последнее обновление правил: 01.07.2023</p>
+        </footer>
+    </div>
+</body>
+</html>
